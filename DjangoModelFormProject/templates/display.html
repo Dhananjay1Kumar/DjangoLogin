@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Cost</th>
+        <th>Product Mfd</th>
+        <th>Product Exp</th>
+    </tr>
+    {% for rec in records %}
+    <tr>
+        <td>{{ rec.pid }}</td>
+        <td>{{ rec.pname }}</td>
+        <td>{{ rec.pcost }}</td>
+        <td>{{ rec.pmfd }}</td>
+        <td>{{ rec.pexpdt}}</td>
+    </tr>
+    {% endfor %}
+<a href="/modelformdbapp">Click to insert more records</a>
+</table>
+</body>
+</html>
